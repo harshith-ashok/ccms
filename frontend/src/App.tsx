@@ -2,8 +2,11 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
-
-const isAuthenticated = () => localStorage.getItem("loggedIn") === "true";
+import AddNew from "./pages/AddNew";
+import ProtectedRoute from "./ProtectedRoute";
+import Transactions from "./pages/Transactions";
+import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -13,10 +16,15 @@ function App() {
       <Route
         path="/dashboard"
         element={
-          isAuthenticated() ? <Dashboard /> : <Navigate to="/login" replace />
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
         }
       />
-
+      <Route path="/add-new" element={<AddNew />} />
+      <Route path="/transactions" element={<Transactions />} />
+      <Route path="/reports" element={<Reports />} />
+      <Route path="/settings" element={<Settings />} />
       <Route path="*" element={<Navigate to="/login" />} />
     </Routes>
   );
