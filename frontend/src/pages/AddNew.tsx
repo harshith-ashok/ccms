@@ -526,7 +526,7 @@ export default function AddNew() {
                 <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-yellow-400/20 to-yellow-400 pointer-events-none" />
 
                 <div className="flex items-start justify-between relative">
-                  <span className="text-sm font-bold text-white/90 tracking-wide">
+                  <span className="text-sm uppercase font-bold text-white/90 tracking-wide">
                     {previewBank}
                   </span>
                   <div className="flex items-center gap-1.5">
