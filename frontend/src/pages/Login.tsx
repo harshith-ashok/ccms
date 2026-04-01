@@ -51,7 +51,7 @@ function Login() {
       <div className="w-full max-w-sm relative">
         {/* Logo */}
         <div className="flex items-center justify-center gap-2.5 mb-10">
-          <div className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_2px_rgba(251,191,36,0.5)]" />
+          <div className="w-2 h-2 rounded-full animate-pulse bg-amber-400 shadow-[0_0_8px_2px_rgba(251,191,36,0.5)]" />
           <span className="text-xl font-bold tracking-tight text-zinc-100">
             Financer
           </span>
@@ -102,13 +102,13 @@ function Login() {
                   onChange={(e) => setUsername(e.target.value)}
                   minLength={3}
                   maxLength={30}
-                  className="w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400/40 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-150"
+                  className="font-mono w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400/40 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-150"
                 />
               </div>
 
               {/* Password */}
               <div className="space-y-2">
-                <label className="text-[10px] font-semibold tracking-[0.15em] uppercase text-zinc-500">
+                <label className="font-mono text-[10px] font-semibold tracking-[0.15em] uppercase text-zinc-500">
                   Password
                 </label>
                 <input
@@ -127,7 +127,7 @@ function Login() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-2.5 rounded-xl bg-amber-400 text-zinc-900 text-sm font-bold hover:bg-amber-300 shadow-[0_0_20px_rgba(251,191,36,0.2)] hover:shadow-[0_0_28px_rgba(251,191,36,0.35)] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                  className="hover:cursor-pointer w-full py-2.5 rounded-xl bg-amber-400 text-zinc-900 text-sm font-bold hover:bg-amber-300 shadow-[0_0_20px_rgba(251,191,36,0.2)] hover:shadow-[0_0_28px_rgba(251,191,36,0.35)] disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
                 >
                   {loading ? (
                     <span className="flex items-center justify-center gap-2">

@@ -106,9 +106,9 @@ function Register() {
                   type="text"
                   value={firstName}
                   required
-                  placeholder="Alex"
+                  placeholder="Kamaleshaa DMK"
                   onChange={(e) => setFirstName(e.target.value)}
-                  className="w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400/40 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-150"
+                  className="font-mono w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400/40 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-150"
                 />
               </div>
 
@@ -121,11 +121,11 @@ function Register() {
                   type="text"
                   value={username}
                   required
-                  placeholder="your_username"
+                  placeholder="username"
                   onChange={(e) => setUsername(e.target.value)}
                   minLength={3}
                   maxLength={30}
-                  className="w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400/40 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-150"
+                  className="font-mono w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400/40 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-150"
                 />
               </div>
 
@@ -143,7 +143,7 @@ function Register() {
                   minLength={8}
                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                   title="Must contain uppercase, lowercase and number"
-                  className="w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400/40 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-150"
+                  className="font-mono w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-2.5 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-amber-400/40 focus:ring-1 focus:ring-amber-400/10 transition-colors duration-150"
                 />
                 <p className="text-[10px] text-zinc-600 font-mono">
                   Uppercase, lowercase and a number required

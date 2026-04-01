@@ -21,10 +21,38 @@ function App() {
           </ProtectedRoute>
         }
       />
-      <Route path="/add-new" element={<AddNew />} />
-      <Route path="/transactions" element={<Transactions />} />
-      <Route path="/reports" element={<Reports />} />
-      <Route path="/settings" element={<Settings />} />
+      <Route
+        path="/add-new"
+        element={
+          <ProtectedRoute>
+            <AddNew />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/transactions"
+        element={
+          <ProtectedRoute>
+            <Transactions />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/reports"
+        element={
+          <ProtectedRoute>
+            <Reports />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/settings"
+        element={
+          <ProtectedRoute>
+            <Settings />
+          </ProtectedRoute>
+        }
+      />
       <Route path="*" element={<Navigate to="/login" />} />
     </Routes>
   );

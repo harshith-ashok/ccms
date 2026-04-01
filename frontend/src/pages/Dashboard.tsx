@@ -158,14 +158,11 @@ export default function Dashboard() {
     navigate("/login");
   };
 
-  // ── Derived stats ──────────────────────────────────────────────────────────
-
   const totalCredit = cards.reduce((s, c) => s + Number(c.credit_limit), 0);
   const totalDue = cards.reduce((s, c) => s + Number(c.monthly_due), 0);
   const usagePercent =
     totalCredit > 0 ? Math.round((totalDue / totalCredit) * 100) : 0;
 
-  // Total spent this month (debit)
   const now = new Date();
   const thisMonthKey = `${now.getFullYear()}-${now.getMonth()}`;
   const spentThisMonth = transactions

@@ -398,37 +398,6 @@ export default function Settings() {
             Dashboard
           </Link>
           <Link
-            to="/add-new"
-            className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:bg-white/5 hover:text-zinc-100 transition-colors duration-150"
-          >
-            <svg
-              className="w-[18px] h-[18px] shrink-0"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <rect x="1" y="4" width="22" height="16" rx="2" />
-              <line x1="1" y1="10" x2="23" y2="10" />
-            </svg>
-            New Card
-          </Link>
-          <Link
-            to="/transactions"
-            className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:bg-white/5 hover:text-zinc-100 transition-colors duration-150"
-          >
-            <svg
-              className="w-[18px] h-[18px] shrink-0"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" />
-            </svg>
-            Transactions
-          </Link>
-          <Link
             to="/reports"
             className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:bg-white/5 hover:text-zinc-100 transition-colors duration-150"
           >
@@ -445,6 +414,39 @@ export default function Settings() {
             </svg>
             Reports
           </Link>
+          <Link
+            to="/add-new"
+            className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:bg-white/5 hover:text-zinc-100 transition-colors duration-150"
+          >
+            <svg
+              className="w-[18px] h-[18px] shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <rect x="1" y="4" width="22" height="16" rx="2" />
+              <line x1="1" y1="10" x2="23" y2="10" />
+            </svg>
+            New Card
+          </Link>
+
+          <Link
+            to="/transactions"
+            className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-500 hover:bg-white/5 hover:text-zinc-100 transition-colors duration-150"
+          >
+            <svg
+              className="w-[18px] h-[18px] shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" />
+            </svg>
+            Transactions
+          </Link>
+
           <Link
             to="/settings"
             className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium bg-amber-400/10 text-amber-400"
